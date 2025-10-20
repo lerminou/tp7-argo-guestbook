@@ -1,11 +1,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: frontend.formateur.lab.lerm.tech
+  name: guestbook
 spec:
   ingressClassName: nginx
   rules:
-    - host: guestbook.local
+    - host: frontend.formateur.lab.lerm.tech
       http:
         paths:
           - path: /
