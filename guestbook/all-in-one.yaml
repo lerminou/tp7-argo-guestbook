@@ -85,6 +85,8 @@ spec:
             cpu: 100m
             memory: 100Mi
         env:
+        - name: REDIS_MASTER_SERVICE_HOST
+          value: redis-master
         - name: GET_HOSTS_FROM
           value: env
           # If your cluster config does not include a dns service, then to
@@ -138,6 +140,8 @@ spec:
             cpu: 100m
             memory: 100Mi
         env:
+        - name: REDIS_MASTER_SERVICE_HOST
+          value: redis-master
         - name: GET_HOSTS_FROM
           value: env
           # If your cluster config does not include a dns service, then to
