@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: guestbook
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   rules:
     - host: frontend.formateur.lab.lerm.tech
       http:
